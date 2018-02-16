@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "377315510779",
+    "firebase_url": "https://dnd-party.firebaseio.com",
+    "project_id": "dnd-party",
+    "storage_bucket": "dnd-party.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:377315510779:android:ad2028364a9db8b9",
+        "android_client_info": {
+          "package_name": "com.example.rob.dndparty"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "377315510779-eb3jrcpc3f89ssvbjln8lvd5ijpfdno8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.rob.dndparty",
+            "certificate_hash": "93fd565d0c79c4a746f75c4f5c3e6e2cd2db7019"
+          }
+        },
+        {
+          "client_id": "377315510779-0jn3lkhpaj96dv4sjvjupmpmbdfa10fu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjtP0q2VGWvZ5-ZgqUOP2F_VufUZBYzxE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "377315510779-0jn3lkhpaj96dv4sjvjupmpmbdfa10fu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
