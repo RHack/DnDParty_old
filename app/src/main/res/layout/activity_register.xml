@@ -17,44 +17,31 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/email_address"
-        android:inputType="textEmailAddress" />
+        android:inputType="textEmailAddress"/>
 
     <EditText
         android:id="@+id/editPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/password"
-        android:inputType="textPassword" />
+        android:inputType="textPassword"/>
+
+    <EditText
+        android:id="@+id/editConfirmPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/confirm_password"
+        android:inputType="textPassword"/>
 
     <TextView
-        android:id="@+id/btnLogin"
+        android:id="@+id/btnRegister"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:textAlignment="center"
         android:background="@drawable/button"
-        android:text="@string/login" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/blank" />
-
-    <TextView
-        android:id="@+id/btnForgotPassword"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:textAlignment="center"
-        android:background="@drawable/button"
-        android:text="@string/forgot_password" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/blank" />
+        android:text="@string/register" />
 
     <TextView
         android:layout_width="match_parent"
@@ -77,13 +64,13 @@
         android:text="@string/blank" />
 
     <TextView
-        android:id="@+id/btnRegister"
+        android:id="@+id/btnLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:textAlignment="center"
         android:background="@drawable/button"
-        android:text="@string/register" />
+        android:text="@string/login"/>
 
 </LinearLayout>

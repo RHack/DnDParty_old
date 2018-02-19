@@ -1,3 +1,17 @@
 <resources>
+    <!-- App Header -->
     <string name="app_name">DnD Party</string>
+
+    <!-- Login and Registration -->
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="guest_login">Continue as Guest</string>
+    <string name="email_address">Email Address</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="blank"> </string>
+
+
+
 </resources>
