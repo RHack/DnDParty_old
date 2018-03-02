@@ -110,7 +110,7 @@ class RegisterActivity : AppCompatActivity() {
                             updateUserInfoAndUI()
 
                         } else {
-                            Log.w(TAG, "createUserWithEmailAndPasswordFail", task.exception)
+                            Log.w(TAG, "createUserWithEmailAndPasswordFail$", task.exception)
                             Toast.makeText(this@RegisterActivity, "Authentication failed", Toast.LENGTH_SHORT).show()
                         }
                     }
@@ -143,7 +143,7 @@ class RegisterActivity : AppCompatActivity() {
         mUser?.sendEmailVerification()?.addOnCompleteListener(this) { task ->
             if (task.isSuccessful) {
                 Toast.makeText(this@RegisterActivity,
-                        "Verification email sent to " + mUser?.email,
+                        "Verification email sent to ${mUser?.email}",
                         Toast.LENGTH_SHORT).show()
             } else {
                 Log.e(TAG, "sendEmailVerification", task.exception)
