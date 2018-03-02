@@ -18,6 +18,8 @@ import com.google.firebase.database.FirebaseDatabase
 /**
  * Created by rob on 2/17/18.
  */
+// Got a lot of help from http://www.appsdeveloperblog.com/firebase-authentication-example-kotlin/
+
 
 private val TAG = "RegisterActivity"
 
