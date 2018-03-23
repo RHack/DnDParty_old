@@ -1,9 +1,8 @@
 package com.example.rob.dndparty
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-import android.view.View
-import android.widget.Button
 import android.widget.TextView
 import com.google.firebase.auth.FirebaseAuth
 
@@ -20,19 +19,15 @@ class MenuActivity : AppCompatActivity() {
 
         var btnLogOut = findViewById<TextView>(R.id.btnLogout)
 
-       /* btnLogOut.setOnClickListener{ view ->
+        btnLogOut.setOnClickListener {
             signOut()
         }
-
-        fbAuth.addAuthStateListener {
-            if(fbAuth.currentUser == null){
-                this.finish()
-            }
-        }*/
     }
 
     fun signOut(){
         fbAuth.signOut()
+        val intent = Intent(this, LoginActivity :: class.java)
+        startActivity(intent)
 
     }
 

@@ -2,11 +2,9 @@ package com.example.rob.dndparty
 
 import android.content.Intent
 import android.os.Bundle
-import android.support.design.widget.Snackbar
 import android.support.v7.app.AppCompatActivity
 import android.text.TextUtils
 import android.util.Log
-import android.view.View
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
@@ -115,21 +113,6 @@ class RegisterActivity : AppCompatActivity() {
                         }
                     }
         }
-
-    }
-
-    fun signIn(view: View, email: String, password: String) {
-        showMessage(view, "Authenticating...")
-
-        mAuth?.signInWithEmailAndPassword(email, password)?.addOnCompleteListener(this, { task ->
-            if (task.isSuccessful) {
-                var intent = Intent(this, MenuActivity::class.java)
-                intent.putExtra("id", mAuth?.currentUser?.email)
-                startActivity(intent)
-            } else {
-                showMessage(view, "Error: ${task.exception?.message}")
-            }
-        })
     }
 
     private fun updateUserInfoAndUI() {
@@ -153,9 +136,5 @@ class RegisterActivity : AppCompatActivity() {
             }
 
         }
-    }
-
-    fun showMessage(view: View, message: String){
-        Snackbar.make(view, message, Snackbar.LENGTH_INDEFINITE).setAction("Action", null).show()
     }
 }
